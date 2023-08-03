@@ -15,7 +15,4 @@
     .header__nav li{
         @apply p-[2rem]
     }
-    .header__nav__buttons a{
-        @apply p-[2rem]
-    }
 }

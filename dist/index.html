@@ -12,22 +12,26 @@
         <div class="header__wrapper flex items-center justify-between">
             <div class="branding flex items-center gap-[1.5rem]">
                 <img src="../dist/img/Starbucks_Corporation_Logo_2011.svg.png" alt="" class="w-[4rem]">
-                <div class="header__nav absolute bg-red-300 top-[7.5rem] right-[-100rem] w-[70%] h-[100vh] transition-all">
-                    <ul class="column gap-0 text-left">
+                <div class="header__nav absolute bg-white top-[7.5rem] right-[-100rem] w-[70%] h-[100vh] transition-all lg:static lg:h-auto lg:w-full">
+                    <ul class="flex flex-col lg:flex-row">
                     <li class="li"><a href="" class="">Menu</a></li>
                     <li class="li"><a href="" class="">Rewards</a></li>
                     <li class="li"><a href="" class="">Gift Cards</a></li>
-                        <div class="header__nav__buttons flex m-[1rem]">
-                            <a href="" class="">Sign in</a>
-                            <a href="" class="">Join now</a>
-                        </div>
-                        <div class="header__store">
-                            <a href="" class="">Find a store</a>
-                        </div>
+                    </ul>
+                    <ul class="header__actions lg:hidden">
+                        <li><a href="" class="">Find a store</a></li>
+                        <li><a href="" class="">Sign in</a></li>
+                        <li><a href="" class="">Join now</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="toggle__menu block p-[.3rem] hover:bg-white rounded-sm cursor-pointer">    
+            <ul class="header__right hidden lg:flex lg:items-center lg:gap-[1.5rem]">
+                <li><a href="" class="">Find a store</a></li>
+                <li><a href="" class="">Sign in</a></li>
+                <li><a href="" class="">Join now</a></li>
+            </ul>
+            
+            <div class="toggle__menu block p-[.3rem] hover:bg-white rounded-sm cursor-pointer lg:hidden">    
                 <span class="w-[2rem] h-[.2rem] block bg-black"></span>
                 <span class="w-[2rem] h-[.2rem] block bg-black my-[.3rem] mx-0"></span>
                 <span class="w-[2rem] h-[.2rem] block bg-black"></span>
